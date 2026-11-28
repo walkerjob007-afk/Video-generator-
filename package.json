@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "backend": "pocketbase/pocketbase.exe serve --http=127.0.0.1:8090",
+    "backend": "cd pocketbase && pocketbase.exe serve --http=127.0.0.1:8090",
     "electron": "electron electron/main.cjs",
     "electron:dev": "concurrently -k \"vite\" \"wait-on http://localhost:5173 && electron electron/main.cjs\""
   },
